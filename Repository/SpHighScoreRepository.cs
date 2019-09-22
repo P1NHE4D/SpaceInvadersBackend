@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using Contracts;
 using Entities;
 using Entities.Models;
@@ -8,6 +10,11 @@ namespace Repository
     {
         public SpHighScoreRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
+        }
+
+        public IEnumerable<SpHighScore> GetAllHighScores()
+        {
+            return FindAll().OrderBy(entry => entry.Score).ToList();
         }
     }
 }
