@@ -4,8 +4,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entities.Models
 {
-    [Table("SinglePlayerHighscore")]
-    public class SinglePlayerHighscore
+    [Table("SpHighScore")]
+    public class SpHighScore
     {
         [Key]
         public Guid Id { get; set; }

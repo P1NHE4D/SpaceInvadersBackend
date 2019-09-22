@@ -4,6 +4,7 @@ using Contracts;
 using LoggerService;
 using Entities;
 using Microsoft.EntityFrameworkCore;
+using Repository;
 
 namespace SpaceInvadersServer.Extensions
 {
@@ -38,6 +39,11 @@ namespace SpaceInvadersServer.Extensions
             {
                 options.UseSqlite("Filename=highscores.db");
             });
+        }
+        
+        public static void ConfigureRepositoryWrapper(this IServiceCollection services)
+        {
+            services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
         }
     }
 }

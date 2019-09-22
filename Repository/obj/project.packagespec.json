@@ -17,7 +17,14 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/alexmichael/Projects/SpaceInvadersServer/Contracts/Contracts.csproj": {
+            "projectPath": "/Users/alexmichael/Projects/SpaceInvadersServer/Contracts/Contracts.csproj"
+          },
+          "/Users/alexmichael/Projects/SpaceInvadersServer/Entities/Entities.csproj": {
+            "projectPath": "/Users/alexmichael/Projects/SpaceInvadersServer/Entities/Entities.csproj"
+          }
+        }
       }
     },
     "warningProperties": {

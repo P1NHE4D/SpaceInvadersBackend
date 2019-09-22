@@ -2,10 +2,10 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Entities.Models
+namespace SpaceInvadersServer.Entities.Models
 {
-    [Table("MultiPlayerHighscore")]
-    public class MultiPlayerHighscore
+    [Table("MpHighScore")]
+    public class MpHighScore
     {
         [Key]
         public Guid Id { get; set; }

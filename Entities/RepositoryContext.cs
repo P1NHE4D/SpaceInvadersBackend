@@ -1,5 +1,6 @@
 using Entities.Models;
 using Microsoft.EntityFrameworkCore;
+using SpaceInvadersServer.Entities.Models;
 
 namespace Entities
 {
@@ -9,8 +10,8 @@ namespace Entities
         {
         }
         
-        public DbSet<SinglePlayerHighscore> SinglePlayerHighscores { get; set; }
+        public DbSet<SpHighScore> SpHighScores { get; set; }
         
-        public DbSet<MultiPlayerHighscore> MultiPlayerHighscores { get; set; }
+        public DbSet<MpHighScore> MpHighScores { get; set; }
     }
 }
