@@ -17,7 +17,11 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/alexmichael/Projects/SpaceInvadersServer/Contracts/Contracts.csproj": {
+            "projectPath": "/Users/alexmichael/Projects/SpaceInvadersServer/Contracts/Contracts.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -34,6 +38,10 @@
           "target": "Package",
           "version": "[2.2.0, )",
           "autoReferenced": true
+        },
+        "NLog": {
+          "target": "Package",
+          "version": "[4.6.7, )"
         }
       },
       "imports": [
