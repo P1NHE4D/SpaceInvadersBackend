@@ -1,6 +1,5 @@
 using Entities.Models;
 using Microsoft.EntityFrameworkCore;
-using SpaceInvadersServer.Entities.Models;
 
 namespace Entities
 {

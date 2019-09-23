@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Contracts;
@@ -14,7 +15,13 @@ namespace Repository
 
         public IEnumerable<SpHighScore> GetAllHighScores()
         {
-            return FindAll().OrderBy(entry => entry.Score).ToList();
+            return FindAll().OrderByDescending(entry => entry.Score).ToList();
+        }
+
+        public void AddHighScore(SpHighScore highScore)
+        {
+            highScore.Id = Guid.NewGuid();
+            Create(highScore);
         }
     }
 }

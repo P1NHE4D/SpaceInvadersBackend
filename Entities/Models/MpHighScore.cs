@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SpaceInvadersServer.Entities.Models
+namespace Entities.Models
 {
     [Table("MpHighScore")]
     public class MpHighScore
