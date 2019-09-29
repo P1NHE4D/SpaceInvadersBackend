@@ -17,7 +17,14 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/alexmichael/Projects/SpaceInvadersServer/Entities/Entities.csproj": {
+            "projectPath": "/Users/alexmichael/Projects/SpaceInvadersServer/Entities/Entities.csproj"
+          },
+          "/Users/alexmichael/Projects/SpaceInvadersServer/Repository/Repository.csproj": {
+            "projectPath": "/Users/alexmichael/Projects/SpaceInvadersServer/Repository/Repository.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -36,6 +43,10 @@
         "MSTest.TestFramework": {
           "target": "Package",
           "version": "[1.4.0, )"
+        },
+        "Microsoft.EntityFrameworkCore.InMemory": {
+          "target": "Package",
+          "version": "[2.2.6, )"
         },
         "Microsoft.NET.Test.Sdk": {
           "target": "Package",
