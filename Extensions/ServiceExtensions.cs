@@ -16,10 +16,7 @@ namespace SpaceInvadersServer.Extensions
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
-                    builder => builder.AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader()
-                        .AllowCredentials());
+                    builder => builder.WithOrigins("http://localhost:5000", "http://localhost:5001"));
             });
         }
         
