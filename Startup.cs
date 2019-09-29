@@ -37,14 +37,7 @@ namespace SpaceInvadersServer
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
 
-            app.UseHttpsRedirection();
-
             app.UseCors("CorsPolicy");
-
-            app.UseForwardedHeaders(new ForwardedHeadersOptions
-            {
-                ForwardedHeaders = ForwardedHeaders.All
-            });
 
             app.UseMvc();
         }
