@@ -12,11 +12,13 @@ namespace SpaceInvadersServer.Extensions
     {
         public static void ConfigureCors(this IServiceCollection services)
         {
-            // TODO: Restrict policy to allow access only from a specified source
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
-                    builder => builder.WithOrigins("http://localhost:5000", "http://localhost:5001"));
+                    builder => builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .AllowCredentials());
             });
         }
         

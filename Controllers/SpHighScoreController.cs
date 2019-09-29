@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Cors;
 
 namespace SpaceInvadersServer.Controllers
 {
-    [EnableCors("CorsPolicy")]
     [Route("api/sp-high-score")]
     public class SpHighScoreController : ControllerBase
     {
