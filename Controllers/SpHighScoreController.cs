@@ -2,9 +2,11 @@ using System;
 using Microsoft.AspNetCore.Mvc;
 using Contracts;
 using Entities.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace SpaceInvadersServer.Controllers
 {
+    [EnableCors("CorsPolicy")]
     [Route("api/sp-high-score")]
     public class SpHighScoreController : ControllerBase
     {
