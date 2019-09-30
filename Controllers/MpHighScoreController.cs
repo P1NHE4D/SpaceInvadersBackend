@@ -2,7 +2,6 @@ using System;
 using Microsoft.AspNetCore.Mvc;
 using Contracts;
 using Entities.Models;
-using Microsoft.AspNetCore.Cors;
 
 namespace SpaceInvadersServer.Controllers
 {
